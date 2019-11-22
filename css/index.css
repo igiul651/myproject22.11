@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web&display=swap');
+
+:root{
+    font-family: 'Titillium Web', sans-serif;
+    --main-color: white;
+    background: black;
+}
+h1, h2, h3, p, div, nav, header, footer, body {
+    margin: 0;
+    padding: 0;
+}
+
+header nav .logo {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 3rem;
+    text-align: center;
+}
+
+
+header nav .menu {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    padding: 0;
+}
+
+header nav  .menu a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    border: 1px solid transparent;
+    padding: 5px;
+}
+
+
+@media (min-width: 550px) {
+    header nav {
+        display: flex;
+        align-items: center;
+    }
+
+    header .menu {
+        flex: 1;
+    }
+}
+
+header .banner {
+    background-image: url(../img/ipad2.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 500px;
+}
+
+header .banner h1  {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 4rem;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.button {
+    display: inline-block;
+    padding: 0.20em 1.5em;
+    border: 0.1em solid white;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.12em;
+    box-sizing: content-box;
+    text-decoration: none;
+    font-weight: 250;
+    color: white;
+    text-align: center;
+    transition: all 0.3s;
+    background-color: transparent;
+}
+
+.button:hover {
+    color: white;
+    background-color: black ;
+    cursor: pointer;
+}
+
+.card-button {
+    border-color:white;
+    color: rgb(255, 255, 255);
+}
+
+.card-button:hover {
+    background-color: black;
+    color: white;
+}
+
+
+main .product-list article img {
+    display: block;
+    width: 70%;
+}
+
+main .product-list article .buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+@media (min-width: 560px) {
+    main .product-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+    }
+}
+
+@media (min-width: 979px) {
+    main .product-list {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 980px) {
+    main .product-list {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+div{
+    color: white;
+}
+
+footer  {
+    color: white;
+    text-align: center;
+}
+
+img  {
+    display: block;
+    margin: auto;
+}
